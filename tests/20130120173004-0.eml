@@ -1,0 +1,189 @@
+Received: by mail-ob0-f169.google.com with SMTP id v19so5265497obq.14
+        for <arnoud@afgetapt.nl>; Sun, 20 Jan 2013 08:30:03 -0800 (PST)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=tumblr.com; s=google;
+        h=mime-version:x-received:in-reply-to:references:date:message-id
+         :subject:from:to:content-type;
+        bh=ajhY20/1lP6ge5jTc9Y79roYIwO1r6gfQknwOoWizvU=;
+        b=tSdRHurJhJNVuMbwGc7N9m1lHYlVu8kz+hAbNoq9Xfv4i3cq+T23zOzTtHfEERq/Nq
+         oeieTkWxlpqnhDt7kjRnsyup77n9n5jc9/kgXdMOfJjvidL3GeLzF+pUBaLaaBWt72/A
+         maLCRmmbD2WlxvGhAwXkm3bortkw16708HXFU=
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=google.com; s=20120113;
+        h=mime-version:x-received:in-reply-to:references:date:message-id
+         :subject:from:to:content-type:x-gm-message-state;
+        bh=ajhY20/1lP6ge5jTc9Y79roYIwO1r6gfQknwOoWizvU=;
+        b=GrmsoxI8/Z2/VkSi4DsDFrVydlE1cjQ3I3aOArkLTxOxfGF0a+3V2c0t3CI/j+l6GS
+         ba6Zwbcjv4RmpwIA90SA/bmXALWq78zq4FLTsLI1E/K5WwlsFWxNvRKl+r4zMYsRbHmM
+         kPueiNN4+C/SsH4ZTwJBSJBaoPTN9mPERN3REec3gBxz2zYMkFOgGwGAG99Dia3Kr3bu
+         RJp/jFfWoTQzNPGDvZH63xq0qLskEZyhI5dDuArSGW94OZmqW9Dnl/E+L8IqgisVOOvc
+         HBNXERcP6kiXTeRln3lzkVL5m3pD9fgql6l0NMXznpRaLvhzYhRmOdzwsXxO9kpgx8z4
+         FrdQ==
+MIME-Version: 1.0
+X-Received: by 10.182.146.13 with SMTP id sy13mr11838821obb.45.1358699402813;
+ Sun, 20 Jan 2013 08:30:02 -0800 (PST)
+Received: by 10.76.112.80 with HTTP; Sun, 20 Jan 2013 08:30:02 -0800 (PST)
+X-Arf: yes
+In-Reply-To: <20130120154401.C22F3239D@j15757.servers.jiffybox.net>
+References: <20130120154401.C22F3239D@j15757.servers.jiffybox.net>
+Date: Sun, 20 Jan 2013 17:30:02 +0100
+Message-ID: <CAN0hPBRr4cY07k6qQwqGwG7ga6VJGx5=rjvz+zWTZXj5cMiaqQ@mail.gmail.com>
+Subject: Fwd: [NOREPLY][Blocklist-16104] Spam-Link at your service
+From: Arnoud Vermeer <arnoud@tumblr.com>
+To: arnoud@afgetapt.nl
+Content-Type: multipart/mixed; boundary=f46d04462b6e42e29104d3badb87
+X-Gm-Message-State: ALoCoQkFVFoyJX00ocbndbJTWMjuyZm5xKUEul1FL95mzcVEQzHwBXWHq9SRZWd8bHkgi4prQbVy
+
+--f46d04462b6e42e29104d3badb87
+Content-Type: multipart/alternative; boundary=f46d04462b6e42e28a04d3badb85
+
+--f46d04462b6e42e28a04d3badb85
+Content-Type: text/plain; charset=ISO-8859-1
+
+---------- Forwarded message ----------
+From: Abuse-Team Blocklist.de <spamlinks@spamlinks.blocklist.de>
+Date: Sun, Jan 20, 2013 at 4:44 PM
+Subject: [NOREPLY][Blocklist-16104] Spam-Link at your service
+To: ops-infra+arin@tumblr.com
+
+
+
+Hello Abuse-Team,
+
+your server with the IP: 66.6.36.42 is currently hosting a possible
+scam-site.
+This site has reached an Blocklist-Spamscore of 1200. The concerning
+site is following site:
+http://buyclonidineonline.tumblr.com
+
+Please check this site and do a cleanup if necessary. To resolve this case,
+please visit
+http://spamlinks.blocklist.de/resolve.php?case=82020a2d4b094214f7b7948acf899a0724de18ec83fc766fc7df19db
+
+Your site was distributed by forums spam and therefor checked automatically
+for the possibility of spam at the site. This email is to inform you about
+maybe harmful content at your webspace.
+If the content is not harmful or unwanted, no action is needed - we did not
+blacklist you.
+
+You also can parse this mail with X-ARF tools that can be found at
+http://www.x-arf.org/specification.html .
+
+We found your address in the abusix abuse contact database at
+http://abusix.com/global-reporting/abuse-contact-db . If this contact is
+wrong, please inform info@abusix.com about this.
+
+Please do NOT reply at this email, use the contact form instead.
+
+
+Regards,
+Abuse-Team blocklist.de
+http://www.blocklist.de/en/
+
+---
+Reported-From: spamlinks@spamlinks.blocklist.de
+Category: fraud
+Report-Type: scam
+Service: http
+Version: 0.1
+User-Agent: V.A.L.O.R. 1.0
+Date: Sun, 20 Jan 2013 16:44:01 +0100
+Source-Type: uri
+Source: http://buyclonidineonline.tumblr.com
+Domain: buyclonidineonline.tumblr.com
+Port: 80
+Report-ID: 16104@spamlinks.blocklist.de
+Schema-URL: http://www.x-arf.org/schema/fraud_0.1.3.json
+Attachment: none
+
+--f46d04462b6e42e28a04d3badb85
+Content-Type: text/html; charset=ISO-8859-1
+Content-Transfer-Encoding: quoted-printable
+
+<div dir=3D"ltr"><br><br><div class=3D"gmail_quote">---------- Forwarded me=
+ssage ----------<br>From: <b class=3D"gmail_sendername">Abuse-Team Blocklis=
+t.de</b> <span dir=3D"ltr">&lt;<a href=3D"mailto:spamlinks@spamlinks.blockl=
+ist.de">spamlinks@spamlinks.blocklist.de</a>&gt;</span><br>
+Date: Sun, Jan 20, 2013 at 4:44 PM<br>Subject: [NOREPLY][Blocklist-16104] S=
+pam-Link at your service<br>To: <a href=3D"mailto:ops-infra%2Barin@tumblr.c=
+om">ops-infra+arin@tumblr.com</a><br><br><br><br>
+Hello Abuse-Team,<br>
+<br>
+your server with the IP: 66.6.36.42 is currently hosting a possible scam-si=
+te.<br>
+This site has reached an Blocklist-Spamscore of 1200. The concerning<br>
+site is following site:<br>
+<a href=3D"http://buyclonidineonline.tumblr.com" target=3D"_blank">http://b=
+uyclonidineonline.tumblr.com</a><br>
+<div class=3D"im"><br>
+Please check this site and do a cleanup if necessary. To resolve this case,=
+ please visit<br>
+</div><a href=3D"http://spamlinks.blocklist.de/resolve.php?case=3D82020a2d4=
+b094214f7b7948acf899a0724de18ec83fc766fc7df19db" target=3D"_blank">http://s=
+pamlinks.blocklist.de/resolve.php?case=3D82020a2d4b094214f7b7948acf899a0724=
+de18ec83fc766fc7df19db</a><br>
+
+<div class=3D"HOEnZb"><div class=3D"h5"><br>
+Your site was distributed by forums spam and therefor checked automatically=
+ for the possibility of spam at the site. This email is to inform you about=
+ maybe harmful content at your webspace.<br>
+If the content is not harmful or unwanted, no action is needed - we did not=
+ blacklist you.<br>
+<br>
+You also can parse this mail with X-ARF tools that can be found at <a href=
+=3D"http://www.x-arf.org/specification.html" target=3D"_blank">http://www.x=
+-arf.org/specification.html</a> .<br>
+<br>
+We found your address in the abusix abuse contact database at <a href=3D"ht=
+tp://abusix.com/global-reporting/abuse-contact-db" target=3D"_blank">http:/=
+/abusix.com/global-reporting/abuse-contact-db</a> . If this contact is wron=
+g, please inform <a href=3D"mailto:info@abusix.com">info@abusix.com</a> abo=
+ut this.<br>
+
+<br>
+Please do NOT reply at this email, use the contact form instead.<br>
+<br>
+<br>
+Regards,<br>
+Abuse-Team <a href=3D"http://blocklist.de" target=3D"_blank">blocklist.de</=
+a><br>
+<a href=3D"http://www.blocklist.de/en/" target=3D"_blank">http://www.blockl=
+ist.de/en/</a><br>
+</div></div><br>---<br>
+Reported-From: <a href=3D"mailto:spamlinks@spamlinks.blocklist.de">spamlink=
+s@spamlinks.blocklist.de</a><br>
+Category: fraud<br>
+Report-Type: scam<br>
+Service: http<br>
+Version: 0.1<br>
+User-Agent: V.A.L.O.R. 1.0<br>
+Date: Sun, 20 Jan 2013 16:44:01 +0100<br>
+Source-Type: uri<br>
+Source: <a href=3D"http://buyclonidineonline.tumblr.com" target=3D"_blank">=
+http://buyclonidineonline.tumblr.com</a><br>
+Domain: <a href=3D"http://buyclonidineonline.tumblr.com" target=3D"_blank">=
+buyclonidineonline.tumblr.com</a><br>
+Port: 80<br>
+Report-ID: <a href=3D"mailto:16104@spamlinks.blocklist.de">16104@spamlinks.=
+blocklist.de</a><br>
+Schema-URL: <a href=3D"http://www.x-arf.org/schema/fraud_0.1.3.json" target=
+=3D"_blank">http://www.x-arf.org/schema/fraud_0.1.3.json</a><br>
+Attachment: none<br>
+<br><br></div><br></div>
+
+--f46d04462b6e42e28a04d3badb85--
+--f46d04462b6e42e29104d3badb87
+Content-Type: text/plain; charset=utf-8; name="report.txt"
+Content-Disposition: attachment; filename="report.txt"
+Content-Transfer-Encoding: base64
+X-Attachment-Id: 776056241d8afb9b_0.1
+
+LS0tDQpSZXBvcnRlZC1Gcm9tOiBzcGFtbGlua3NAc3BhbWxpbmtzLmJsb2NrbGlzdC5kZQ0KQ2F0
+ZWdvcnk6IGZyYXVkDQpSZXBvcnQtVHlwZTogc2NhbQ0KU2VydmljZTogaHR0cA0KVmVyc2lvbjog
+MC4xDQpVc2VyLUFnZW50OiBWLkEuTC5PLlIuIDEuMA0KRGF0ZTogU3VuLCAyMCBKYW4gMjAxMyAx
+Njo0NDowMSArMDEwMA0KU291cmNlLVR5cGU6IHVyaQ0KU291cmNlOiBodHRwOi8vYnV5Y2xvbmlk
+aW5lb25saW5lLnR1bWJsci5jb20NCkRvbWFpbjogYnV5Y2xvbmlkaW5lb25saW5lLnR1bWJsci5j
+b20NClBvcnQ6IDgwDQpSZXBvcnQtSUQ6IDE2MTA0QHNwYW1saW5rcy5ibG9ja2xpc3QuZGUNClNj
+aGVtYS1VUkw6IGh0dHA6Ly93d3cueC1hcmYub3JnL3NjaGVtYS9mcmF1ZF8wLjEuMy5qc29uDQpB
+dHRhY2htZW50OiBub25lDQo=
+--f46d04462b6e42e29104d3badb87--
