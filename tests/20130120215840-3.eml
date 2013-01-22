@@ -1,0 +1,150 @@
+Received: by mail-ob0-f173.google.com with SMTP id xn12so5356845obc.18
+        for <arnoud@afgetapt.nl>; Sun, 20 Jan 2013 12:58:39 -0800 (PST)
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=google.com; s=20120113;
+        h=x-received:x-forwarded-to:x-forwarded-for:delivered-to:x-received
+         :received-spf:dkim-signature:sender:x-received:x-beenthere
+         :x-received:x-received:received-spf:to:subject
+         :x-php-originating-script:from:reply-to:x-mailer:x-arf:x-report-id
+         :mime-version:message-id:date:x-original-sender
+         :x-original-authentication-results:precedence:mailing-list:list-id
+         :x-google-group-id:list-post:list-help:list-archive:list-unsubscribe
+         :content-type:x-gm-message-state;
+        bh=h9yTFRJw4IodPv9QGlQmLLlea+xud58xaMhdFf6wb0g=;
+        b=Ynbqax/1optSNxkf7D9IO2qSSIKxStou3eYCGi1knyEqj9ALetlcnpnOVx1fMFlSLx
+         ncfB4FtBr26OwpMnRRyi5v6NtBeqcya/i8rD+la7VqJy6oto/sh+waL6TIqtbUnwDRcB
+         S23kyEiswc2kX07Fv9LyTbOgJ2+zBxpnLY2K+zGVvt0jUgSsFfO7Bg6U0jj+WPYMbzy3
+         68RIlhgkpnsw/kWr5gzh7tGKdemmzEdXU/Myv+6/yBjPFtXjSfwsZBGyOx2rDVJbAsWg
+         y2AbtO9dPCKF3jwZtOJ+ZOSv2pR0sdkgd1s9aTVjvwm+flOsa31IqFeyVYtOClCdxa0T
+         W41g==
+X-Received: by 10.60.32.50 with SMTP id f18mr12602300oei.8.1358715519500;
+        Sun, 20 Jan 2013 12:58:39 -0800 (PST)
+X-Forwarded-To: arnoud@afgetapt.nl
+X-Forwarded-For: arnoud@tumblr.com arnoud@afgetapt.nl
+Delivered-To: arnoud@tumblr.com
+Received: by 10.76.112.80 with SMTP id io16csp194695oab;
+        Sun, 20 Jan 2013 12:58:38 -0800 (PST)
+X-Received: by 10.14.202.3 with SMTP id c3mr52883598eeo.4.1358715517917;
+        Sun, 20 Jan 2013 12:58:37 -0800 (PST)
+Return-Path: <ops-infra+bncBAABB7NU6GDQKGQEFBHOYWQ@tumblr.com>
+Received: from mail-fa0-f70.google.com (mail-fa0-f70.google.com [209.85.161.70])
+        by mx.google.com with ESMTPS id w6si6781792een.94.2013.01.20.12.58.37
+        (version=TLSv1 cipher=ECDHE-RSA-RC4-SHA bits=128/128);
+        Sun, 20 Jan 2013 12:58:37 -0800 (PST)
+Received-SPF: softfail (google.com: domain of transitioning ops-infra+bncBAABB7NU6GDQKGQEFBHOYWQ@tumblr.com does not designate 46.252.24.141 as permitted sender) client-ip=46.252.24.141;
+Authentication-Results: mx.google.com;
+       spf=softfail (google.com: domain of transitioning ops-infra+bncBAABB7NU6GDQKGQEFBHOYWQ@tumblr.com does not designate 46.252.24.141 as permitted sender) smtp.mail=ops-infra+bncBAABB7NU6GDQKGQEFBHOYWQ@tumblr.com;
+       dkim=pass header.i=@tumblr.com
+Received: by mail-fa0-f70.google.com with SMTP id t1sf6573647fae.9
+        for <arnoud@tumblr.com>; Sun, 20 Jan 2013 12:58:37 -0800 (PST)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=tumblr.com; s=google;
+        h=sender:x-received:x-beenthere:x-received:x-received:received-spf:to
+         :subject:x-php-originating-script:from:reply-to:x-mailer:x-arf
+         :x-report-id:mime-version:message-id:date:x-original-sender
+         :x-original-authentication-results:precedence:mailing-list:list-id
+         :x-google-group-id:list-post:list-help:list-archive:list-unsubscribe
+         :content-type;
+        bh=h9yTFRJw4IodPv9QGlQmLLlea+xud58xaMhdFf6wb0g=;
+        b=dF+s6C//Oar36/M4dJstFzjnkdnnnMIBU2p3Ww0WoM8eZsixKvXQvMBpuWYpQwhdaJ
+         aKHMeVbEJxFQh04Dd5TzWkru7t6pqIfXRehX621OcVfnYbb+c+/Kzt2iaQxF4wPFFwAZ
+         ln+LzdnhNt5jfhkX/oO4fu83AANbzxOoru47g=
+Sender: ops-infra@tumblr.com
+X-Received: by 10.180.83.101 with SMTP id p5mr2117259wiy.0.1358715517064;
+        Sun, 20 Jan 2013 12:58:37 -0800 (PST)
+X-BeenThere: ops-infra@tumblr.com
+Received: by 10.180.94.97 with SMTP id db1ls1087732wib.0.canary; Sun, 20 Jan
+ 2013 12:58:36 -0800 (PST)
+X-Received: by 10.14.219.72 with SMTP id l48mr52709203eep.37.1358715516907;
+        Sun, 20 Jan 2013 12:58:36 -0800 (PST)
+X-Received: by 10.14.219.72 with SMTP id l48mr52709197eep.37.1358715516891;
+        Sun, 20 Jan 2013 12:58:36 -0800 (PST)
+Received: from j15757.servers.jiffybox.net (spamlinks.blocklist.de. [46.252.24.141])
+        by mx.google.com with ESMTP id w2si20285182eel.166.2013.01.20.12.58.36;
+        Sun, 20 Jan 2013 12:58:36 -0800 (PST)
+Received-SPF: pass (google.com: best guess record for domain of spamlinks@spamlinks.blocklist.de designates 46.252.24.141 as permitted sender) client-ip=46.252.24.141;
+Received: by j15757.servers.jiffybox.net (Postfix, from userid 0)
+	id 625EF23A6; Sun, 20 Jan 2013 22:11:02 +0100 (CET)
+To: ops-infra+arin@tumblr.com
+Subject: [NOREPLY][Blocklist-17717] Spam-Link at your service
+X-PHP-Originating-Script: 0:reporting.php
+From: Abuse-Team Blocklist.de <spamlinks@spamlinks.blocklist.de>
+Reply-To: spamlinks@spamlinks.blocklist.de
+X-Mailer: antiabusemailer
+X-Arf: yes
+X-Report-ID: 17717
+MIME-Version: 1.0
+Message-Id: <20130120211102.625EF23A6@j15757.servers.jiffybox.net>
+Date: Sun, 20 Jan 2013 22:11:02 +0100 (CET)
+X-Original-Sender: spamlinks@spamlinks.blocklist.de
+X-Original-Authentication-Results: mx.google.com;       spf=pass (google.com:
+ best guess record for domain of spamlinks@spamlinks.blocklist.de designates
+ 46.252.24.141 as permitted sender) smtp.mail=spamlinks@spamlinks.blocklist.de
+Precedence: list
+Mailing-list: list ops-infra@tumblr.com; contact ops-infra+owners@tumblr.com
+List-ID: <ops-infra.tumblr.com>
+X-Google-Group-Id: 1091779498952
+List-Post: <http://groups.google.com/a/tumblr.com/group/ops-infra/post?hl=en_US>,
+ <mailto:ops-infra@tumblr.com>
+List-Help: <http://support.google.com/a/tumblr.com/bin/topic.py?hl=en_US&topic=25838>,
+ <mailto:ops-infra+help@tumblr.com>
+List-Archive: <http://groups.google.com/a/tumblr.com/group/ops-infra/?hl=en_US>
+List-Unsubscribe: <http://groups.google.com/a/tumblr.com/group/ops-infra/subscribe?hl=en_US>,
+ <mailto:googlegroups-manage+1091779498952+unsubscribe@googlegroups.com>
+Content-type: multipart/mixed; boundary="81fd830c85363675edb98d2879916d8c"; charset=iso-8859-1
+X-Gm-Message-State: ALoCoQmKncdyiMHJKvELZXdFTQWD7pIP4A0i+cW3BJONDVogvxHyGRrdegDXA405tUMTRZXz8VoD
+
+--81fd830c85363675edb98d2879916d8c
+MIME-Version: 1.0
+Content-Transfer-Encoding: 7bit
+Content-Type: text/plain; charset=utf-8
+
+
+Hello Abuse-Team,
+
+your server with the IP: 66.6.36.32 is currently hosting a possible scam-site. 
+This site has reached an Blocklist-Spamscore of 2100. The concerning
+site is following site:
+http://gukaar77.tumblr.com/side-effects-duromine
+
+Please check this site and do a cleanup if necessary. To resolve this case, please visit
+http://spamlinks.blocklist.de/resolve.php?case=73312dc9767717cf944ca728291bb24ab0178e65b4a3bb9a03d88aff
+
+Your site was distributed by forums spam and therefor checked automatically for the possibility of spam at the site. This email is to inform you about maybe harmful content at your webspace.
+If the content is not harmful or unwanted, no action is needed - we did not blacklist you.
+
+You also can parse this mail with X-ARF tools that can be found at http://www.x-arf.org/specification.html .
+
+We found your address in the abusix abuse contact database at http://abusix.com/global-reporting/abuse-contact-db . If this contact is wrong, please inform info@abusix.com about this.
+
+Please do NOT reply at this email, use the contact form instead. 
+
+
+Regards,
+Abuse-Team blocklist.de
+http://www.blocklist.de/en/
+
+--81fd830c85363675edb98d2879916d8c
+MIME-Version: 1.0
+Content-Transfer-Encoding: 7bit
+Content-Type: text/plain; charset=utf-8; name="report.txt";
+
+---
+Reported-From: spamlinks@spamlinks.blocklist.de
+Category: fraud
+Report-Type: scam
+Service: http
+Version: 0.1
+User-Agent: V.A.L.O.R. 1.0
+Date: Sun, 20 Jan 2013 22:11:02 +0100
+Source-Type: uri
+Source: http://gukaar77.tumblr.com/side-effects-duromine
+Domain: gukaar77.tumblr.com
+Port: 80
+Report-ID: 17717@spamlinks.blocklist.de
+Schema-URL: http://www.x-arf.org/schema/fraud_0.1.3.json
+Attachment: none
+
+--81fd830c85363675edb98d2879916d8c
+
+--81fd830c85363675edb98d2879916d8c--
